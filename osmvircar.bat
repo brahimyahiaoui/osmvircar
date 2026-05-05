@@ -1,6 +1,6 @@
-CD osm2world.old
+CD osm2world
 REM CALL osm2world-windows.bat --performancePrint -i ../bin/map.osm -o ../bin/map.obj
-java -Xmx2G -jar OSM2World.jar -c config.properties -i ../bin/map.osm -o ../bin/map.obj
+java -Xmx2G -jar OSM2World.jar --config config.properties -i ../bin/map.osm -o ../bin/map.obj
 CD ../bin
 CALL START data_server.bat
 REN map.obj.mtl map.mtl
